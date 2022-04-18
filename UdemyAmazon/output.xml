@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220411 15:56:55.833" rpa="false" schemaversion="2">
+<suite id="s1" name="Amazon Teste" source="c:\projects\udemy_robot\amazon_teste.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;">
+<kw name="Abrir o navegador" library="amazon_resource" type="SETUP">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>browser=chrome</arg>
+<arg>url=${URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220411 15:56:56.188" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com.br'.</msg>
+<msg timestamp="20220411 15:56:59.850" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220411 15:56:59.865" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 98
+Current browser version is 100.0.4896.75 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011A7AC3+2587331]
+	Ordinal0 [0x0113ADD1+2141649]
+	Ordinal0 [0x01033BB8+1063864]
+	Ordinal0 [0x01053638+1193528]
+	Ordinal0 [0x0104F4B5+1176757]
+	Ordinal0 [0x0104CC51+1166417]
+	Ordinal0 [0x0107D12F+1364271]
+	Ordinal0 [0x0107CD5A+1363290]
+	Ordinal0 [0x010784A6+1344678]
+	Ordinal0 [0x010553F6+1201142]
+	Ordinal0 [0x010562E6+1204966]
+	GetHandleVerifier [0x0134DF22+1680738]
+	GetHandleVerifier [0x01400DBC+2413564]
+	GetHandleVerifier [0x0123D151+563089]
+	GetHandleVerifier [0x0123BF13+558419]
+	Ordinal0 [0x0114081E+2164766]
+	Ordinal0 [0x01145508+2184456]
+	Ordinal0 [0x01145650+2184784]
+	Ordinal0 [0x0114F5BC+2225596]
+	BaseThreadInitThunk [0x75F9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77937A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77937A4E+238]
+</msg>
+<status status="FAIL" starttime="20220411 15:56:56.187" endtime="20220411 15:56:59.866"/>
+</kw>
+<status status="FAIL" starttime="20220411 15:56:56.187" endtime="20220411 15:56:59.869"/>
+</kw>
+<doc>Este teste verifica o menu Eletrônicos do site da Amazon
+E verificar a categoria Computadores e Informáticas</doc>
+<tag>menus</tag>
+<status status="FAIL" starttime="20220411 15:56:56.185" endtime="20220411 15:56:59.872">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 98
+Current browser version is 100.0.4896.75 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x011A7AC3+2587331]
+	Ordinal0 [0x0113ADD1+2141649]
+	Ordinal0 [0x01033BB8+1063864]
+	Ordinal0 [0x01053638+1193528]
+	Ordinal0 [0x0104F4B5+1176757]
+	Ordinal0 [0x0104CC51+1166417]
+	Ordinal0 [0x0107D12F+1364271]
+	Ordinal0 [0x0107CD5A+1363290]
+	Ordinal0 [0x010784A6+1344678]
+	Ordinal0 [0x010553F6+1201142]
+	Ordinal0 [0x010562E6+1204966]
+	GetHandleVerifier [0x0134DF22+1680738]
+	GetHandleVerifier [0x01400DBC+2413564]
+	GetHandleVerifier [0x0123D151+563089]
+	GetHandleVerifier [0x0123BF13+558419]
+	Ordinal0 [0x0114081E+2164766]
+	Ordinal0 [0x01145508+2184456]
+	Ordinal0 [0x01145650+2184784]
+	Ordinal0 [0x0114F5BC+2225596]
+	BaseThreadInitThunk [0x75F9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77937A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77937A4E+238]
+</status>
+</test>
+<doc>Esse suite testa o site da Amazon.com.br</doc>
+<status status="FAIL" starttime="20220411 15:56:55.839" endtime="20220411 15:56:59.886"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">menus</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Amazon Teste">Amazon Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
